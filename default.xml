@@ -23,7 +23,7 @@
    <remote  name="github"
             fetch="git://github.com" />
 
-   <default remote="refs/heads/ics"
+   <default revision="refs/heads/ics"
             remote="github"
             sync-j="4" />
 
