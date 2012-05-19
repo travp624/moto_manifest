@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+   <remote  name="aosp"
+            fetch="https://android.googlesource.com/" />
+
+   <remote  name="gh"
+            fetch="https://github.com/"
+            revision="master" />
+
+   <remote  name="origin"
+            fetch="git@github.com:travp624/"
+            revision="master" />
+
+   <remote  name="kang"
+            fetch="https://github.com/AOKP/"
+            revision="master" />
+
+   <remote  name="cm"
+            fetch="https://github.com/CyanogenMod/"
+            revision="ics" />
+
+   <remote  name="omapzoom"
+            fetch="git://git.omapzoom.org/" />
+
+   <default remote="aosp"
+            sync-j="4" />
+
+  <project path="build" name="travp624/android_build" remote="gh" revision="master">
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project path="abi/cpp" name="platform/abi/cpp" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="bionic" name="AOKP/bionic" remote="gh" revision="ics" />
+  <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="bootable/recovery" name="travp624/android_bootable_recovery" remote="gh" revision="master" />
+  <project path="cts" name="platform/cts" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="dalvik" name="platform/dalvik" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="development" name="AOKP/platform_development" remote="gh" revision="ics" />
+  <project path="device/amazon/otter" name="travp624/device_amazon_otter" remote="gh" revision="master" />
+  <project path="device/common" name="device/common" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="device/generic/goldfish" name="device/generic/goldfish" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="device/htc/common" name="travp624/device_htc_common" remote="gh" revision="gingerbread" />
+  <project path="device/htc/inc" name="travp624/android_device_htc_inc" remote="gh" revision="ics" />
+  <project path="device/htc/vivow" name="travp624/android_device_htc_vivow" remote="gh" revision="ics" />
+  <project path="device/htc/msm7x30-common" name="AOKP/android_device_htc_msm7x30-common" remote="gh" revision="ics" />
+  <project path="device/htc/supersonic" name="travp624/android_device_htc_supersonic" remote="gh" revision="ics" />
+  <project path="device/hp/tenderloin" name="travp624/device_hp_tenderloin" remote="gh" revision="master" />
+  <project path="device/moto/droid2" name="travp624/device_moto_droid2" remote="gh" revision="master" />
+  <project path="device/moto/omap34com" name="travp624/device_moto_omap34com" remote="gh" revision="master" />
+  <project path="device/moto/shadow" name="travp624/device_moto_shadow" remote="gh" revision="master" />
+  <project path="device/moto/sholes" name="travp624/device_moto_sholes" remote="gh" revision="master" />
+  <project path="device/moto/spyder" name="travp624/device_moto_spyder" remote="gh" revision="master" />
+  <project path="device/moto/stingray" name="travp624/device_moto_stingray" remote="gh" revision="master" />
+  <project path="device/moto/wingray" name="travp624/device_moto_wingray" remote="gh" revision="master" />
+  <project path="device/sample" name="device/sample" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="device/samsung/aries-common" name="travp624/device_samsung_aries-common" remote="gh" revision="master" />
+  <project path="device/samsung/crespo" name="travp624/device_samsung_crespo" remote="gh" revision="master" />
+  <project path="device/samsung/crespo4g" name="travp624/device_samsung_crespo4g" remote="gh" revision="master" />
+  <project path="device/samsung/fascinatemtd" name="travp624/device_samsung_fascinatemtd" remote="gh" revision="master" />
+  <project path="device/samsung/maguro" name="travp624/device_samsung_maguro" remote="gh" revision="master" />
+  <project path="device/samsung/p4" name="AOKP/device_samsung_p4" remote="gh" revision="ics" />
+  <project path="device/samsung/p4-common" name="AOKP/device_samsung_p4-common" remote="gh" revision="ics" />
+  <project path="device/samsung/p4vzw" name="AOKP/device_samsung_p4vzw" remote="gh" revision="ics" />
+  <project path="device/samsung/p4wifi" name="AOKP/device_samsung_p4wifi" remote="gh" revision="ics" />
+  <project path="device/samsung/toro" name="travp624/device_samsung_toro" remote="gh" revision="master" />
+  <project path="device/samsung/toroplus" name="travp624/device_samsung_toroplus" remote="gh" revision="master" />
+  <project path="device/samsung/tuna" name="travp624/device_samsung_tuna" remote="gh" revision="master" />
+  <project path="device/ti/panda" name="travp624/device_ti_panda" remote="gh" revision="master" />
+  <project path="docs/source.android.com" name="platform/docs/source.android.com" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/android-mock" name="platform/external/android-mock" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/antlr" name="platform/external/antlr" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/apache-harmony" name="platform/external/apache-harmony" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/apache-http" name="platform/external/apache-http" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/apache-xml" name="platform/external/apache-xml" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/astl" name="platform/external/astl" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/bash" name="travp624/external_bash" remote="gh" revision="master" />
+  <project path="external/busybox" name="CyanogenMod/android_external_busybox.git" remote="gh" revision="ics" />
+  <project path="external/bison" name="platform/external/bison" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/blktrace" name="platform/external/blktrace" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/bluetooth/bluez" name="AOKP/external_bluetooth_bluez" remote="gh" revision="ics" />
+  <project path="external/bluetooth/glib" name="platform/external/bluetooth/glib" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/bluetooth/hcidump" name="platform/external/bluetooth/hcidump" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/bouncycastle" name="platform/external/bouncycastle" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/bsdiff" name="platform/external/bsdiff" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/bzip2" name="platform/external/bzip2" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/chromium" name="platform/external/chromium" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/clang" name="platform/external/clang" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/collada" name="platform/external/collada" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/dbus" name="platform/external/dbus" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/dhcpcd" name="platform/external/dhcpcd" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/dnsmasq" name="platform/external/dnsmasq" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/doclava" name="platform/external/doclava" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/dropbear" name="platform/external/dropbear" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/e2fsprogs" name="AOKP/external_e2fsprogs" remote="gh" revision="ics" />
+  <project path="external/easymock" name="platform/external/easymock" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/elfutils" name="AOKP/external_elfutils" remote="gh" revision="ics" />
+  <project path="external/embunit" name="platform/external/embunit" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/emma" name="platform/external/emma" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/esd" name="platform/external/esd" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/expat" name="platform/external/expat" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/eyes-free" name="platform/external/eyes-free" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/fdlibm" name="platform/external/fdlibm" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/flac" name="platform/external/flac" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/freetype" name="platform/external/freetype" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/fsck_msdos" name="AOKP/external_fsck_msdos" remote="gh" revision="ics" />
+  <project path="external/genext2fs" name="platform/external/genext2fs" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/giflib" name="platform/external/giflib" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/google-diff-match-patch" name="platform/external/google-diff-match-patch" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/grub" name="platform/external/grub" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/gtest" name="AOKP/external_gtest" remote="gh" revision="ics" />
+  <project path="external/guava" name="platform/external/guava" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/harfbuzz" name="platform/external/harfbuzz" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/hostapd" name="tpruvot/android_external_hostapd" revision="ics" />
+  <project path="external/hyphenation" name="platform/external/hyphenation" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/icu4c" name="platform/external/icu4c" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/iproute2" name="platform/external/iproute2" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/ipsec-tools" name="platform/external/ipsec-tools" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/iptables" name="platform/external/iptables" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/javasqlite" name="platform/external/javasqlite" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/javassist" name="platform/external/javassist" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/jdiff" name="platform/external/jdiff" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/jhead" name="platform/external/jhead" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/jpeg" name="AOKP/external_jpeg" remote="gh" revision="ics" />
+  <project path="external/jsilver" name="platform/external/jsilver" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/jsr305" name="platform/external/jsr305" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/junit" name="platform/external/junit" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/kernel-headers" name="platform/external/kernel-headers" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/libffi" name="platform/external/libffi" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/libgsm" name="platform/external/libgsm" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/liblzf" name="platform/external/liblzf" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/libncurses" name="travp624/external_libncurses"  remote="gh" revision="master" />
+  <project path="external/libnfc-nxp" name="platform/external/libnfc-nxp" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/libnl-headers" name="platform/external/libnl-headers" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/libpcap" name="platform/external/libpcap" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/libphonenumber" name="platform/external/libphonenumber" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/libpng" name="AOKP/external_libpng" remote="gh" revision="ics" />
+  <project path="external/libvpx" name="platform/external/libvpx" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/libxml2" name="platform/external/libxml2" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/libxslt" name="platform/external/libxslt" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/libyuv" name="platform/external/libyuv" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/llvm" name="platform/external/llvm" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/lohit-fonts" name="platform/external/lohit-fonts" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/lzo" name="CyanogenMod/android_external_lzo" remote="gh" revision="ics" />
+  <project path="external/markdown" name="platform/external/markdown" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/mesa3d" name="AOKP/external_mesa3d" remote="gh" revision="ics" />
+  <project path="external/mksh" name="platform/external/mksh" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/mockwebserver" name="platform/external/mockwebserver" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/mtpd" name="platform/external/mtpd" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/netcat" name="platform/external/netcat" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/netperf" name="platform/external/netperf" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/neven" name="platform/external/neven" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/nist-sip" name="platform/external/nist-sip" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/oauth" name="platform/external/oauth" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/opencv" name="platform/external/opencv" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/openssl" name="platform/external/openssl" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/oprofile" name="CyanogenMod/android_external_oprofile" remote="gh" revision="ics"  />
+  <project path="external/pcre" name="platform/external/pcre" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/ping" name="platform/external/ping" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/ping6" name="platform/external/ping6" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/ppp" name="platform/external/ppp" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/proguard" name="platform/external/proguard" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/protobuf" name="platform/external/protobuf" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/qemu" name="AOKP/external_qemu" remote="gh" revision="ics" />
+  <project path="external/qemu-pc-bios" name="platform/external/qemu-pc-bios" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/quake" name="platform/external/quake" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/replicaisland" name="platform/external/replicaisland" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/safe-iop" name="platform/external/safe-iop" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/skia" name="AOKP/external_skia" remote="gh" revision="ics" />
+  <project path="external/sonivox" name="platform/external/sonivox" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/speex" name="platform/external/speex" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/sqlite" name="platform/external/sqlite" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/srec" name="platform/external/srec" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/srtp" name="platform/external/srtp" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/stlport" name="platform/external/stlport" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/strace" name="platform/external/strace" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/svox" name="platform/external/svox" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/tagsoup" name="platform/external/tagsoup" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/tcpdump" name="platform/external/tcpdump" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/tinyalsa" name="platform/external/tinyalsa" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/tinyxml" name="platform/external/tinyxml" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/tremolo" name="platform/external/tremolo" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/v8" name="platform/external/v8" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/valgrind" name="platform/external/valgrind" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/webkit" name="AOKP/external_webkit" remote="gh" revision="ics" />
+  <project path="external/webp" name="platform/external/webp" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/webrtc" name="platform/external/webrtc" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/wpa_supplicant" name="AOKP/external_wpa_supplicant" remote="gh" revision="ics" />
+  <project path="external/wpa_supplicant_6" name="AOKP/external_wpa_supplicant_6" remote="gh" revision="ics" />
+  <project path="external/wpa_supplicant_8" name="AOKP/external_wpa_supplicant_8" remote="gh" revision="ics" />
+  <project path="external/xmlwriter" name="platform/external/xmlwriter" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="external/yaffs2" name="AOKP/external_yaffs2" remote="gh" revision="ics" />
+  <project path="external/zlib" name="AOKP/external_zlib" remote="gh" revision="ics" />
+  <project path="frameworks/base" name="travp624/frameworks_base" remote="gh" revision="Motoics" />
+  <project path="frameworks/compile/libbcc" name="CyanogenMod/android_frameworks_compile_libbcc" remote="gh" revision="ics" />
+  <project path="frameworks/compile/linkloader" name="platform/frameworks/compile/linkloader" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="frameworks/compile/slang" name="CyanogenMod/android_frameworks_compile_slang" remote="gh" revision="ics" />
+  <project path="frameworks/ex" name="travp624/frameworks_ex" remote="gh" revision="master" />
+  <project path="frameworks/media/libvideoeditor" name="platform/frameworks/media/libvideoeditor" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="frameworks/opt" name="travp624/frameworks_opt" remote="gh" revision="master" />
+  <project path="frameworks/support" name="platform/frameworks/support" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="hardware/alsa/sound" name="AOKP/hardware_alsa_sound" remote="gh" revision="ics" />
+  <project path="hardware/cm" name="AOKP/hardware_cm" remote="gh" revision="ics" />
+  <project path="hardware/broadcom/wlan" name="travp624/android_hardware_broadcom_wlan" remote="gh" revision="master" />
+  <project path="hardware/invensense" name="platform/hardware/invensense" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="hardware/libhardware" name="travp624/android_hardware_libhardware" remote="gh" revision="ics" />
+  <project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" remote="gh" revision="ics" />
+  <project path="hardware/qcom/display" name="AOKP/android_hardware_qcom_display" remote="gh" revision="ics" />
+  <project path="hardware/qcom/camera" name="AOKP/android_hardware_qcom_camera" remote="gh" revision="ics" />
+  <project path="hardware/msm7k" name="AOKP/android_hardware_msm7k" remote="gh" revision="ics" />
+  <project path="hardware/qcom/gps" name="AOKP/hardware_qcom_gps" remote="gh" revision="ics" />
+  <project path="hardware/qcom/media" name="AOKP/android_hardware_qcom_media" remote="gh" revision="ics" />
+  <project path="hardware/ril" name="AOKP/android_hardware_ril" remote="gh" revision="ics" />
+  <project path="hardware/ti/camera" name="Hashcode/android_hardware_ti_camera" revision="refs/heads/ics-hybrid-solana" />
+  <project path="hardware/ti/omap3" name="travp624/android_hardware_ti_omap3-compat" remote="gh" revision="ics" />
+  <project path="hardware/ti/omap4xxx" name="Hashcode/android_hardware_ti_omap4xxx" revision="refs/heads/ics-hybrid" />
+  <project path="hardware/ti/syslink" name="Hashcode/android_hardware_ti_syslink" />
+  <project path="hardware/ti/tiler" name="platform/hardware/ti/tiler" remote="omapzoom" revision="refs/heads/memmgr_1.0" />
+  <project path="hardware/ti/wlan" name="travp624/android_hardware_ti_wlan" remote="gh" revision="master" />
+  <project path="hardware/ti/wpan" name="Hashcode/android_hardware_ti_wpan" />
+  <project path="kernel/hp/tenderloin" name="travp624/kernel_hp_tenderloin" remote="gh" revision="master" />
+  <project path="kernel/samsung/tuna" name="travp624/kernel_samsung_tuna" remote="gh" revision="master" />
+  <project path="kernel/moto/stingray" name="travp624/kernel_moto_stingray" remote="gh" revision="master" />
+  <project path="libcore" name="platform/libcore" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="ndk" name="platform/ndk" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/apps/Bluetooth" name="AOKP/packages_apps_Bluetooth" remote="gh" revision="ics" />
+  <project path="packages/apps/Browser" name="travp624/packages_apps_Browser" remote="gh" revision="master" />
+  <project path="packages/apps/Calculator" name="travp624/packages_apps_Calculator" remote="gh" revision="master" />
+  <project path="packages/apps/Calendar" name="travp624/packages_apps_Calendar" remote="gh" revision="master" />
+  <project path="packages/apps/Camera" name="travp624/packages_apps_Camera" remote="gh" revision="master" />
+  <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/apps/Contacts" name="travp624/packages_apps_Contacts" remote="gh" revision="master" />
+  <project path="packages/apps/DeskClock" name="travp624/packages_apps_DeskClock" remote="gh" revision="master" />
+  <project path="packages/apps/DockAudio" name="Atrix-Dev-Team/android_packages_apps_DockAudio" revision="refs/heads/gingerbread" />
+  <project path="packages/apps/DSPManager" name="travp624/packages_apps_DSPManager" remote="gh" revision="master" />
+  <project path="packages/apps/Email" name="travp624/packages_apps_Email" remote="gh" revision="master" />
+  <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/apps/FileManager" name="travp624/packages_apps_FileManager" remote="gh" revision="master" />
+  <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/apps/Mms" name="travp624/packages_apps_Mms" remote="gh" revision="master" />
+  <project path="packages/apps/Music" name="CyanogenMod/android_packages_apps_Music" remote="gh" revision="ics" />
+  <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/apps/Phone" name="travp624/packages_apps_Phone" remote="gh" revision="master" />
+  <project path="packages/apps/Protips" name="platform/packages/apps/Protips" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/apps/Provision" name="platform/packages/apps/Provision" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/apps/Settings" name="travp624/packages_apps_Settings" remote="gh" revision="master" />
+  <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/apps/Stk" name="platform/packages/apps/Stk" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/apps/Tag" name="platform/packages/apps/Tag" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/apps/VideoEditor" name="platform/packages/apps/VideoEditor" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/apps/VoiceDialer" name="platform/packages/apps/VoiceDialer" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/apps/Usb" name="CyanogenDefy/android_packages_apps_Usb" />
+  <project path="packages/experimental" name="platform/packages/experimental" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/inputmethods" name="travp624/packages_inputmethods" remote="gh" revision="master" />
+  <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/providers/ContactsProvider" name="travp624/packages_providers_ContactsProvider" remote="gh" revision="master" />
+  <project path="packages/providers/DownloadProvider" name="travp624/packages_providers_DownloadProvider" remote="gh" revision="master" />
+  <project path="packages/providers/DrmProvider" name="platform/packages/providers/DrmProvider" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/providers/GoogleContactsProvider" name="platform/packages/providers/GoogleContactsProvider" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/providers/MediaProvider" name="travp624/packages_providers_MediaProvider" remote="gh" revision="master" />
+  <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/wallpapers/Galaxy4" name="platform/packages/wallpapers/Galaxy4" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/wallpapers/HoloSpiral" name="platform/packages/wallpapers/HoloSpiral" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/wallpapers/MagicSmoke" name="platform/packages/wallpapers/MagicSmoke" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/wallpapers/NoiseField" name="platform/packages/wallpapers/NoiseField" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="packages/wallpapers/PhaseBeam" name="platform/packages/wallpapers/PhaseBeam" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="prebuilt" name="platform/prebuilt" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="sdk" name="platform/sdk" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="system/bluetooth" name="travp624/system_bluetooth" remote="gh" revision="master" />
+  <project path="system/core" name="AOKP/system_core" remote="gh" revision="ics" />
+  <project path="system/extras" name="CyanogenMod/android_system_extras" remote="gh" revision="ics" />
+  <project path="system/media" name="platform/system/media" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="system/netd" name="platform/system/netd" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="system/su" name="AOKP/android_system_su" remote="gh" revision="ics" />
+  <project path="system/vold" name="AOKP/system_vold" remote="gh" revision="master" />
+
+  <project path="vendor/amazon/otter" name="travp624/vendor_amazon_otter" remote="gh" revision="master" />
+  <project path="vendor/BlackICE" name="travp624/vendor_BlackICE" remote="gh" revision="Motoics" />
+  <project path="vendor/BlackICE/bot" name="travp624/pseudo_buildbot" remote="gh" revision="master" />
+  <project path="vendor/hp/tenderloin" name="travp624/vendor_hp_tenderloin" remote="gh" revision="master" />
+  <project path="vendor/htc" name="travp624/vendor_htc" remote="gh" revision="master" />
+  <project path="vendor/moto/droid2" name="travp624/vendor_moto_droid2" remote="gh" revision="master" />
+  <project path="vendor/moto/shadow" name="travp624/vendor_moto_shadow" remote="gh" revision="master" />
+  <project path="vendor/moto/sholes" name="travp624/vendor_moto_sholes" remote="gh" revision="master" />
+  <project path="vendor/moto/spyder" name="travp624/vendor_moto_spyder" remote="gh" revision="master" />
+  <project path="vendor/moto/stingray" name="travp624/vendor_moto_stingray" remote="gh" revision="master" />
+  <project path="vendor/moto/wingray" name="travp624/vendor_moto_wingray" remote="gh" revision="master" />
+  <project path="vendor/qcom/opensource/omx/mm-core" name="travp624/android_vendor_qcom_opensource_omx_mm-core" remote="gh" revision="ics" />
+  <project path="vendor/qcom/opensource/omx/mm-video" name="travp624/android_vendor_qcom_opensource_omx_mm-video" remote="gh" revision="ics" />
+  <project path="vendor/qcom/opensource/kernel-tests/mm-audio" name="travp624/vendor_qcom_opensource_kernel-tests_mm-audio" remote="gh" revision="ics" />
+  <project path="vendor/samsung" name="travp624/vendor_samsung" remote="gh" revision="master" />
+  <project path="vendor/verizon" name="travp624/vendor_verizon" remote="gh" revision="master" />
+  <project path="vendor/tmobile/apps/ThemeChooser" name="travp624/themes-platform-vendor-tmobile-apps-ThemeChooser" remote="gh" revision="ics"/>
+  <project path="vendor/tmobile/libs/com.tmobile.themes" name="travp624/android_vendor_tmobile_libs_com.tmobile.themes" remote="gh" revision="ics" />
+  <project path="vendor/tmobile/providers/ThemeManager" name="travp624/android_vendor_tmobile_providers_ThemeManager" remote="gh" revision="ics" />
+  <project path="vendor/tmobile/products/themes" name="travp624/android_vendor_tmobile_products_themes" remote="gh" revision="ics" />
+  <project path="vendor/tmobile/themes/Androidian" name="travp624/android_vendor_tmobile_themes_Androidian" remote="gh" revision="master" />
+  <project path="vendor/tmobile/themes/ICERed" name="travp624/vendor_tmobile_themes_ICERed" remote="gh" revision="master" />
+  <project path="vendor/tmobile/themes/ICEOrange" name="travp624/vendor_tmobile_themes_ICEOrange" remote="gh" revision="master" />
+  <project path="vendor/tmobile/themes/ICEGreen" name="travp624/vendor_tmobile_themes_ICEGreen" remote="gh" revision="master" />
+  <project path="vendor/tmobile/themes/ICEBlue" name="travp624/vendor_tmobile_themes_ICEBlue" remote="gh" revision="master" />
+
+  <project path="packages/apps/Superuser" name="travp624/packages_apps_Superuser" remote="gh" revision="master" />
+  <project path="packages/apps/BlackICEControl" name="travp624/packages_apps_BlackICEControl" remote="gh" revision="master" />
+  <project path="packages/apps/Trebuchet" name="travp624/packages_apps_Trebuchet" remote="gh" revision="ics" />
+  <project path="packages/apps/AppWidgetPicker" name="travp624/packages_apps_AppWidgetPicker" remote="gh" revision="master" />
+
+  <project path="platform_manifest" name="travp624/platform_manifest" remote="gh" revision="master" />
+
+</manifest>
