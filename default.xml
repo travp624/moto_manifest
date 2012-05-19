@@ -20,7 +20,11 @@
             fetch="https://github.com/CyanogenMod/"
             revision="ics" />
 
-   <default remote="aosp"
+   <remote  name="github"
+            fetch="git://github.com" />
+
+   <default remote="refs/heads/ics"
+            remote="github"
             sync-j="4" />
 
   <project path="build" name="travp624/android_build" remote="gh" revision="master">
