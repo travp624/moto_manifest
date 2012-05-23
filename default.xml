@@ -302,7 +302,7 @@
   <project path="vendor/moto/wingray" name="travp624/vendor_moto_wingray" remote="gh" revision="master" />
   <project path="vendor/qcom/opensource/omx/mm-core" name="travp624/android_vendor_qcom_opensource_omx_mm-core" remote="gh" revision="ics" />
   <project path="vendor/qcom/opensource/omx/mm-video" name="travp624/android_vendor_qcom_opensource_omx_mm-video" remote="gh" revision="ics" />
-  <project path="vendor/qcom/opensource/kernel-tests/mm-audio" name="travp624/vendor_qcom_opensource_kernel-tests_mm-audio" remote="gh" revision="ics" />
+  <project path="vendor/qcom/opensource/omx/mm-audio" name="CyanogenMod/android_vendor_qcom_opensource_omx_mm-audio" />
   <project path="vendor/samsung" name="travp624/vendor_samsung" remote="gh" revision="master" />
   <project path="vendor/verizon" name="travp624/vendor_verizon" remote="gh" revision="master" />
   <project path="vendor/tmobile/apps/ThemeChooser" name="travp624/themes-platform-vendor-tmobile-apps-ThemeChooser" remote="gh" revision="ics"/>
