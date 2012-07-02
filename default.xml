@@ -20,6 +20,9 @@
             fetch="https://github.com/CyanogenMod/"
             revision="ics" />
 
+   <remote  name="omapzoom"
+            fetch="git://git.omapzoom.org/" />
+
    <default remote="aosp"
             revision="master"
             sync-j="4" />
@@ -190,7 +193,10 @@
   <project path="hardware/qcom/media" name="AOKP/android_hardware_qcom_media" remote="gh" revision="ics" />
   <project path="hardware/ril" name="AOKP/android_hardware_ril" remote="gh" revision="ics" />
   <project path="hardware/ti/omap3" name="travp624/android_hardware_ti_omap3-compat" remote="gh" revision="ics" />
-  <project path="hardware/ti/omap4xxx" name="travp624/hardware_ti_omap4xxx" remote="gh" revision="master" />
+  <project path="hardware/ti/camera" name="Hashcode/android_hardware_ti_camera" revision="refs/heads/ics-hybrid-solana" remote="gh" />
+  <project path="hardware/ti/omap4xxx" name="Hashcode/android_hardware_ti_omap4xxx" revision="refs/heads/ics-hybrid" remote="gh" />
+  <project path="hardware/ti/syslink" name="Hashcode/android_hardware_ti_syslink" revision="ics" remote="gh" />
+  <project path="hardware/ti/tiler" name="platform/hardware/ti/tiler" remote="omapzoom" revision="refs/heads/memmgr_1.0" />
   <project path="hardware/ti/wlan" name="travp624/android_hardware_ti_wlan" remote="gh" revision="master" />
   <project path="hardware/ti/wpan" name="travp624/android_hardware_ti_wpan" remote="gh" revision="master" />
   <project path="libcore" name="AOKP/libcore" remote="gh" revision="ics" />
