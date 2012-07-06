@@ -42,10 +42,12 @@
   <project path="device/generic/goldfish" name="device/generic/goldfish" remote="aosp" revision="refs/tags/android-4.0.4_r2.1" />
   <project path="device/moto/common" name="travp624/device_moto_common" remote="gh" revision="master" />
   <project path="device/moto/droid2" name="travp624/device_moto_droid2" remote="gh" revision="master" />
+  <project path="device/moto/droid2we" name="travp624/device_moto_droid2we" remote="gh" revision="master" />
   <project path="device/moto/omap34com" name="travp624/device_moto_omap34com" remote="gh" revision="master" />
   <project path="device/moto/shadow" name="travp624/device_moto_shadow" remote="gh" revision="master" />
   <project path="device/moto/spyder" name="travp624/device_moto_spyder" remote="gh" revision="master" />
   <project path="device/sample" name="device/sample" remote="aosp" revision="refs/tags/android-4.0.4_r2.1" />
+  <project path="device/ti/panda" name="device/ti/panda" remote="aosp" revision="refs/tags/android-4.0.4_r1.2"/>
   <project path="docs/source.android.com" name="platform/docs/source.android.com" remote="aosp" revision="refs/tags/android-4.0.4_r2.1" />
   <project path="external/android-mock" name="platform/external/android-mock" remote="aosp" revision="refs/tags/android-4.0.4_r2.1" />
   <project path="external/antlr" name="platform/external/antlr" remote="aosp" revision="refs/tags/android-4.0.4_r2.1" />
@@ -269,6 +271,7 @@
   <project path="vendor/BlackICE" name="travp624/vendor_BlackICE" remote="gh" revision="Motoics" />
   <project path="vendor/BlackICE/bot" name="travp624/pseudo_buildbot" remote="gh" revision="master" />
   <project path="vendor/moto/droid2" name="travp624/vendor_moto_droid2" remote="gh" revision="master" />
+  <project path="vendor/moto/droid2we" name="travp624/vendor_moto_droid2we" remote="gh" revision="master" />
   <project path="vendor/moto/shadow" name="travp624/vendor_moto_shadow" remote="gh" revision="master" />
   <project path="vendor/moto/spyder" name="travp624/vendor_moto_spyder" remote="gh" revision="master" />
   <project path="vendor/tmobile/apps/ThemeChooser" name="travp624/themes-platform-vendor-tmobile-apps-ThemeChooser" remote="gh" revision="ics"/>
